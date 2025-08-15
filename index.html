@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lag="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+     <title>Interactive website with sound</title>
+     <style> 
+         body {
+             margin : 0;
+             padding: 0;
+             font-family: arial,
+sans-serif;
+            background:
+linear-gradient(to right,#74edbd5,#ACB6E5);
+            text-align: center;
+            color: #333;
+            transition: background 0.5s ease;
+          }
+          header {
+               background:  rgba(255,255,255,0.3);
+               padding: 1. 20px;
+               font-size:1.05em;
+               font-weight: bold;
+            }
+            h1 {
+                margin-top:50px;
+                color:#222;
+                transition: transform 0.5s ease;
+            }
+            p {
+                font-size : 1.2em;
+            }
+            button {
+                 background:#4CAF50;
+                 color: white;
+                 padding:10px 20px;
+                 border: none;
+                 margin-top:20px;
+                 cursor: pointer;
+                 border-radius : 5px;
+                 font-size:1em;
+                 transition: transform 0.2s ease;
+                 }
+                 button: hover {
+                      background:#45a049;
+                      transform: scale(101);
+                 }
+                 footer {
+                     margin-top:50px;
+                     padding:10px;
+                     background: rgba(255,255,255,0.3);
+                   }
+                    footer {
+                        margin-top:50px;
+                        padding: 10px;
+                        background: rgba(255,255,255,0.3);
+                   }
+               </style>
+            </head>
+            <body>
+                <header>
+                     My first Animated Website 
+                </header>
+             
+                <h1 id="main Text">Hello! Welcome to my website</h1>
+                <p>This is my interactive website with HTML,CSS,JavaScript,Animation,Sound </p>
+             
+             <button
+          onclick="change Background()">change
+          background</button>
+          <button onclick="change Text ()">change Text</button>
+        <footer>
+            &copy; 2025 ,My Website
+        </footer>
+
+      <audio id="clickSound"
+ src="https://www.soundjay.com/buttons/sounds/button-29.mp3"></audio>
+      <audio id="bgsound"
+src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
+      <script>
+         function playsound(id) {
+             const el = 
+document.getelementbyid(id);
+          if (!el) return;
+          el.currenttime = 0;
+          el.play().catch(e =>
+console.log('sound play blocked:',e));
+          }
+          
+           function changebackground() {
+               const colours = ["#74ebd5","ACB6E5","#ff9a9e","#fadOc4", "#a18cd1", "#fbc2eb"];
+                    const random color = color[Math.random() * color.length)];
+
+document.body.style.background = 'linear-gradient(to right,$ {randomcolor}, white)';
+                        playsound('bgsound');
+                   }
+                    function changtext() {
+                       const message = [
+                        "hello , world!"
+                        "welcome to my cool site"
+                        "javasript makes websites alive",
+                        "you clicked the button!"
+                        "enjoy coding!"
+                      ];
+                        const randommessage = 
+              messages[math.floor(math.random() *
+              messages.length)];
+                    const maintext =
+                    main text.innertext=
+     randommessage;
+                 maintext.style.transform = "scale(1.2)";
+                    settimeout(() =>
+ maintext.style.transform= "scale(1)",500);
+                    platsound('clicksound');
+                 }
+         </script>
+ </body>
+ </html>
+
+                      
+
+                                       
+
+                                          
+
+        
+              
+
+                                  
+                 
+                 
+
+                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+                
